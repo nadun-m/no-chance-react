@@ -88,7 +88,6 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <div className="page">
-
                         <Header isLoggedIn={this.state.login.isLoggedIn} 
                                 username={this.state.login.username} 
                                 handleLoginModal={this.handleLoginModal}

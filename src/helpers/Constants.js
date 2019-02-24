@@ -14,5 +14,6 @@ export const ERR_PASSWORD_REQUIRED = 'Password is required';
 export const HTTP_ERR = {
     'SERVER_ERROR': 'Server error',
     'INVALID_TOKEN': 'Invalid token',
-    'INVALID_CREDENTIALS': 'Invalid username or password'
+    'INVALID_CREDENTIALS': 'Invalid username or password',
+    'AUTHOR_CANNOT_VOTE': 'You cannot vote for your own vote'
 };
