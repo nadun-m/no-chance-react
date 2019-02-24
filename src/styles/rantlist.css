@@ -1,0 +1,133 @@
+.post-list {
+  padding-right: 0;
+  margin: 0;
+}
+.post-list .post {
+  text-decoration: none;
+  width: calc(33.33% - 14px);
+  height: 160px;
+  margin-right: 16px;
+  font-size: 14px;
+  display: inline-block;
+  background: #212439;
+  margin-bottom: 16px;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.2s cubic-bezier(0.12, 0.64, 0.58, 1);
+}
+.post-list .post .post__inner {
+  display: flex;
+  height: calc(100% - 30px);
+}
+.post-list .post .post__inner .score {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-list .post .post__inner .score .score__up,
+.post-list .post .post__inner .score .score__down {
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: #5c5f6f;
+  user-select: none;
+  transition: all 0.1s ease-in;
+}
+.post-list .post .post__inner .score .score__up:hover {
+  background: #1ba749 !important;
+}
+.post-list .post .post__inner .score .score__up.checked {
+  background: #1ba749 !important;
+}
+.post-list .post .post__inner .score .score__down:hover {
+  background: #fd2954 !important;
+}
+.post-list .post .post__inner .score .score__down.checked {
+  background: #fd2954 !important;
+}
+.post-list .post .post__inner .score .score__board {
+  padding: 4px 0;
+}
+.post-list .post .post__inner .post__body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+  word-break: break-word;
+  font-size: 16px;
+}
+.post-list .post .post__footer {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.post-list .post .post__footer .post__time {
+  width: auto;
+  color: gray;
+}
+.post-list .post .post__footer .post__comments {
+  margin-left: auto;
+  display: flex;
+  color: gray;
+  align-items: center;
+  transition: all 0.1s ease-in;
+}
+.post-list .post .post__footer .post__comments .icon {
+  width: 16px;
+  margin-right: 4px;
+  height: 16px;
+  fill: gray;
+  transition: all 0.1s ease-in;
+}
+.post-list .post:nth-child(3n) {
+  margin-right: 0;
+}
+.post-list .post:hover {
+  transform: scale(1.1);
+  border: 1px solid gray;
+}
+.post-list .post:hover .score__up {
+  background: gray !important;
+}
+.post-list .post:hover .score__down {
+  background: gray !important;
+}
+.post-list .post:hover .post__comments {
+  color: #24e063;
+}
+.post-list .post:hover .post__comments .icon {
+  fill: #24e063;
+}
+
+@media only screen and (max-width: 940px) {
+  .post-list .post {
+    width: calc(50% - 8px);
+  }
+  .post-list .post:nth-child(2n) {
+    margin-right: 0;
+    float: right;
+  }
+  .post-list .post:nth-child(3n) {
+    margin-right: 0;
+  }
+  .post-list .post:hover {
+    transform: scale(1.05);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .post-list .post {
+    width: calc(100%);
+  }
+  .post-list .post:hover {
+    transform: scale(1.02);
+  }
+}

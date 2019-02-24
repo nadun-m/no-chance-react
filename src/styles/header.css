@@ -1,0 +1,59 @@
+.header {
+  background: #0a0b24;
+  height: 60px;
+  top: 0;
+  width: 100%;
+  position: sticky;
+}
+.header .header__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header .header__content .brand {
+  height: 100%;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .header__content .brand .brand__name {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  font-size: 18px;
+}
+.header .header__content .brand .brand__name span {
+  color: #24e063;
+}
+.header .header__content .brand a {
+  text-decoration: none;
+}
+.header .header__content .profile {
+  height: 100%;
+  margin-left: auto;
+}
+.header .header__content .profile .profile__picture {
+  width: 36px;
+  height: 36px;
+}
+.header .header__content .profile .profile__name {
+  color: white;
+  padding-left: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.header .header__content .join {
+  margin-left: auto;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0.12, 0.64, 0.58, 1);
+  user-select: none;
+}
+.header .header__content .join:hover {
+  color: #fd2954;
+}
